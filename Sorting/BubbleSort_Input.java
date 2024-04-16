@@ -18,7 +18,7 @@ public class Main {
         for (int i = 0; i < arr.length - 1; i++) {
             swapped = false;
             for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j].compareTo(arr[j + 1]) > 0) {
+                if (arr[j].compareTo(arr[j + 1]) > 0) { // it is checking if the element at index j is greater than element at index j-1 then swap(lexicographically)
                     temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
