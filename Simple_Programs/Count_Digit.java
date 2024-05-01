@@ -1,10 +1,13 @@
 package org.example;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int number = 99748873;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Number : ");
+        int number = sc.nextInt();
         int count = count(number);
-        System.out.println(count);
+        System.out.println("Digit Count : " + count);
     }
 
     static int count(int num){
